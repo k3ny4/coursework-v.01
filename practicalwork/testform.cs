@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace practicalwork
 {
-    public partial class test : Form
+    public partial class testform : Form
     {
-        public test()
+        public testform()
         {
             InitializeComponent();
         }
 
-        private void proceed_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-           testform f1 = new testform();
-            f1.Show();
-            Visible = false;
+
         }
     }
 }

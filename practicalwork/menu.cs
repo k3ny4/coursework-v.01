@@ -17,14 +17,9 @@ namespace practicalwork
             InitializeComponent();
         }
 
-        private void menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            learn f2 = new learn();
+            learnpage f2 = new learnpage();
             f2.Show();
             Visible = false;
         }

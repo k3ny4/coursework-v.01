@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="learn.cs">
+    <Compile Include="testform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="learn.Designer.cs">
-      <DependentUpon>learn.cs</DependentUpon>
+    <Compile Include="testform.Designer.cs">
+      <DependentUpon>testform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="learnpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="learnpage.Designer.cs">
+      <DependentUpon>learnpage.cs</DependentUpon>
     </Compile>
     <Compile Include="test.cs">
       <SubType>Form</SubType>
@@ -66,8 +72,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="learn.resx">
-      <DependentUpon>learn.cs</DependentUpon>
+    <EmbeddedResource Include="learnpage.resx">
+      <DependentUpon>learnpage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
@@ -84,6 +90,9 @@
     </Compile>
     <EmbeddedResource Include="test.resx">
       <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testform.resx">
+      <DependentUpon>testform.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
