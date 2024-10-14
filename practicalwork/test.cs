@@ -19,7 +19,7 @@ namespace practicalwork
 
         private void proceed_Click(object sender, EventArgs e)
         {
-           testform f1 = new testform();
+           testprocess f1 = new testprocess();
             f1.Show();
             Visible = false;
         }

@@ -46,19 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="resultats.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>resultats.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="testform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="testform.Designer.cs">
-      <DependentUpon>testform.cs</DependentUpon>
-    </Compile>
     <Compile Include="learnpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testprocess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testprocess.Designer.cs">
+      <DependentUpon>testprocess.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="learnpage.resx">
       <DependentUpon>learnpage.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,14 +88,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="resultats.resx">
-      <DependentUpon>resultats.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="test.resx">
       <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="testform.resx">
-      <DependentUpon>testform.cs</DependentUpon>
+    <EmbeddedResource Include="testprocess.resx">
+      <DependentUpon>testprocess.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
