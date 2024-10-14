@@ -15,24 +15,22 @@ namespace practicalwork
         int correctAnswer;
         int questionNumber = 1;
         int score;
-        int percentage;
         int totalQuestions;
-
         List<int> incorrectQuestions = new List<int>();
 
         public testprocess()
         {
             InitializeComponent();
-            askQuestion(questionNumber);
             totalQuestions = 4;
+            askQuestion(questionNumber);
         }
 
         private void AnswerCheck(object sender, EventArgs e)
         {
             var senderObject = (Button)sender;
-            int buttonTag = Convert.ToInt32(senderObject.Tag);
+            int selectedAnswer = Convert.ToInt32(senderObject.Tag);
 
-            if (buttonTag == correctAnswer)
+            if (selectedAnswer == correctAnswer)
             {
                 score++;
             }
@@ -43,8 +41,6 @@ namespace practicalwork
 
             if (questionNumber == totalQuestions)
             {
-                percentage = (int)Math.Round((double)(score * 100) / totalQuestions);
-
                 string incorrectQuestionsText = "";
                 if (incorrectQuestions.Count > 0)
                 {
@@ -52,15 +48,15 @@ namespace practicalwork
                 }
                 else
                 {
-                    incorrectQuestionsText = "Усі відповіді правильні";
+                    incorrectQuestionsText = "Усі відповіді правильні.";
                 }
-
                 MessageBox.Show(
-                    "Тест завершено." + Environment.NewLine +
-                    "Ви відповіли на " + score + " з " + totalQuestions + " питань правильно." + Environment.NewLine +
-                    incorrectQuestionsText + Environment.NewLine +
-                    "Натисніть OK для повторення тесту або закрийте повідомлення."
-                );
+                                    "Тест завершено." + Environment.NewLine +
+                                    "Ви відповіли на " + score + " з " + totalQuestions + " питань правильно." + Environment.NewLine +
+                                    incorrectQuestionsText + Environment.NewLine +
+                                    "Натисніть OK для повторення тесту або закрийте повідомлення."
+                                    );
+
                 score = 0;
                 questionNumber = 1;
                 incorrectQuestions.Clear();
@@ -85,6 +81,7 @@ namespace practicalwork
                     button4.Text = "Зручність супроводу";
                     correctAnswer = 2;
                     break;
+
                 case 2:
                     label1.Text = "Який з інструментів використовується \nдля обчислення LOC-метрик?\n";
                     button1.Text = "PVS-Studio";
@@ -93,6 +90,7 @@ namespace practicalwork
                     button4.Text = "SourceStat";
                     correctAnswer = 3;
                     break;
+
                 case 3:
                     label1.Text = "Який метод використовується для аналізу \nрезультатів розрахунку метрик у розробленій системі оцінки якості?\n";
                     button1.Text = "Метод найменших квадратів";
@@ -101,6 +99,7 @@ namespace practicalwork
                     button4.Text = "Аналіз чутливості";
                     correctAnswer = 2;
                     break;
+
                 case 4:
                     label1.Text = "Що є однією з причин потреби \nв нових рішеннях для оцінки якості ПЗ?\n";
                     button1.Text = "Застарілість існуючих рішень";
@@ -113,4 +112,9 @@ namespace practicalwork
         }
     }
 
+
 }
+
+
+/*
+ */
