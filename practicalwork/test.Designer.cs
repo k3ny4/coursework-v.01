@@ -88,6 +88,7 @@
             this.Controls.Add(this.proceed);
             this.Controls.Add(this.panel1);
             this.Name = "test";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Test";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

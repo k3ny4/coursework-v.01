@@ -96,7 +96,7 @@ namespace practicalwork
                 Page++;
                 NextPage();
             }
-            if (Page == 8)
+            if (Page == 8) // last page disables btn
             {
                 nextbtn.Enabled = false;
             }
@@ -219,6 +219,11 @@ namespace practicalwork
             menu f1 = new menu();
             f1.Show();
             Visible = false;
+        }
+
+        private void learnpage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,14 +12,16 @@ namespace practicalwork
 {
     public partial class test : Form
     {
-        public test()
+        Form mainform;
+        public test(Form mainform) // main form connection by constructor
         {
             InitializeComponent();
+            this.mainform = mainform;
         }
 
         private void proceed_Click(object sender, EventArgs e)
         {
-           testprocess f1 = new testprocess();
+           TestProcess f1 = new TestProcess(mainform);
             f1.Show();
             Visible = false;
         }

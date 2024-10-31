@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.menubtn = new System.Windows.Forms.Button();
             this.title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
@@ -43,7 +44,6 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.text = new System.Windows.Forms.Label();
-            this.menubtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +58,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(880, 40);
             this.panel1.TabIndex = 0;
+            // 
+            // menubtn
+            // 
+            this.menubtn.BackColor = System.Drawing.Color.Transparent;
+            this.menubtn.Location = new System.Drawing.Point(12, 9);
+            this.menubtn.Name = "menubtn";
+            this.menubtn.Size = new System.Drawing.Size(102, 23);
+            this.menubtn.TabIndex = 3;
+            this.menubtn.Text = "Назад до меню";
+            this.menubtn.UseVisualStyleBackColor = false;
+            this.menubtn.Click += new System.EventHandler(this.menubtn_Click);
             // 
             // title
             // 
@@ -248,17 +259,6 @@
             this.text.TabIndex = 2;
             this.text.Text = ".";
             // 
-            // menubtn
-            // 
-            this.menubtn.BackColor = System.Drawing.Color.Transparent;
-            this.menubtn.Location = new System.Drawing.Point(12, 9);
-            this.menubtn.Name = "menubtn";
-            this.menubtn.Size = new System.Drawing.Size(102, 23);
-            this.menubtn.TabIndex = 3;
-            this.menubtn.Text = "Назад до меню";
-            this.menubtn.UseVisualStyleBackColor = false;
-            this.menubtn.Click += new System.EventHandler(this.menubtn_Click);
-            // 
             // learnpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,7 +270,9 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "learnpage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Learn";
+            this.Load += new System.EventHandler(this.learnpage_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

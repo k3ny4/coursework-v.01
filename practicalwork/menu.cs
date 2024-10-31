@@ -26,9 +26,14 @@ namespace practicalwork
 
         private void button2_Click(object sender, EventArgs e)
         {
-            test f3 = new test();
+            test f3 = new test(this);
             f3.Show();
             Visible = false;
+        }
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

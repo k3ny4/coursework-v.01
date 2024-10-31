@@ -1,6 +1,6 @@
 ﻿namespace practicalwork
 {
-    partial class testprocess
+    partial class TestProcess
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 220);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(12, 197);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 66);
             this.button1.TabIndex = 0;
@@ -47,7 +48,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(422, 220);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(422, 197);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(208, 66);
             this.button2.TabIndex = 1;
@@ -57,6 +59,7 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(12, 292);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(208, 66);
@@ -67,6 +70,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(422, 292);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(208, 66);
@@ -79,14 +83,14 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 113);
+            this.label1.Location = new System.Drawing.Point(288, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // testprocess
+            // TestProcess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,7 +100,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "testprocess";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "TestProcess";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Test Process";
             this.ResumeLayout(false);
             this.PerformLayout();
